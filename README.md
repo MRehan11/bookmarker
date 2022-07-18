@@ -1,5 +1,10 @@
 # README
 
+Capybara helps you test web applications by simulating how a real user would interact with your app.
+In bookmarker application I've implemented the capybara and rpsec to undestand the basics of TDD.
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
