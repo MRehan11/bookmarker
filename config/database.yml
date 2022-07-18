@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  pool: 20
+  username: bookmarker
+  password: bookmarker
+  host: localhost
+  encoding: unicode
+development:
+  <<: *default
+  database: bookmarker_dev
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  username: test_bookmark
+  password: bookmarker
+  database: bookmarker_test
+
+production:
+  <<: *default
+  database: bookmarker_dev
